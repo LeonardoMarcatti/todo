@@ -1,0 +1,49 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 100vh;
+  grid-template-rows: 50px minmax(calc(100vh - 80px), auto) 30px;
+  color: white;
+}
+
+#all, #all > button {
+  margin: 5px;
+}
+
+header, footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/5;
+}
+
+aside {
+  grid-column: 1/2;
+  background-color: rgb(39, 39, 39);
+  padding: 5px;
+}
+
+main {
+  background-color: rgb(39, 39, 39);
+  grid-column: 2/5;
+  padding: 5px;
+}
+
+section {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  min-width: 300px;
+  max-width: 900px;
+}
+
+#editarModal, #deleteModal, #concluirModal, #concluirTodasModal, #deletarTodasModal {
+  color: black;
+}
